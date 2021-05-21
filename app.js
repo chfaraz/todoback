@@ -8,6 +8,7 @@ const app = express();
 
 const todosRoute = require('./routs/todos');
 const userRoute = require('./routs/users');
+const PORT = process.env.PORT || 4000;
 
 //middleware::::::::::::::::
 
@@ -35,6 +36,6 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedT
 });
 
 // starting server
-app.listen(3000, () => console.log('listining to 4000'));
+app.listen(PORT, () => console.log('listining to 4000'));
 
 //mongodb+srv://faraz:<password>@cluster0.6emix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
