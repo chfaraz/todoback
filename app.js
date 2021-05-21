@@ -25,7 +25,7 @@ app.use(
 app.use('/todos', todosRoute);
 app.use('/user', userRoute);
 
-router.get('/', auth, (req, res) => {
+app.get('/', auth, (req, res) => {
     res.json('hello world');
 });
 
