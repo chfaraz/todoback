@@ -33,6 +33,6 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedT
 });
 
 // starting server
-app.listen(4000, () => console.log('listining to 4000'));
+app.listen(3000, () => console.log('listining to 4000'));
 
 //mongodb+srv://faraz:<password>@cluster0.6emix.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
