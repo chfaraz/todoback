@@ -25,7 +25,9 @@ app.use(
 app.use('/todos', todosRoute);
 app.use('/user', userRoute);
 
-// getting all data from items
+router.get('/', auth, (req, res) => {
+    res.json('hello world');
+});
 
 // connecting to DB
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
